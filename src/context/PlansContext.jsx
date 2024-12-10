@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { createContext, useState } from "react";
 import arcade from "../assets/icon-arcade.svg";
 import advanced from "../assets/icon-advanced.svg";
@@ -7,11 +8,7 @@ const PlansContext = createContext();
 
 export const PlansProvider = ({ children }) => {
   const [monthlyPlans, setMonthlyPlans] = useState([
-    { id: 1, 
-      img: arcade, 
-      title: "Arcade", 
-      price: 9 
-    },
+    { id: 1, img: arcade, title: "Arcade", price: 9 },
     {
       id: 2,
       img: advanced,
@@ -50,16 +47,15 @@ export const PlansProvider = ({ children }) => {
     },
   ]);
 
-
   const [selectedMonthlyPlan, setSelectedMonthlyPlan] = useState({
     title: "",
-    price : null,
+    price: null,
   });
 
   const [selectedYearlyPlan, setSelectedYearlyPlan] = useState({
     title: "",
-    price: null
-  })
+    price: null,
+  });
 
   return (
     <PlansContext.Provider
@@ -71,7 +67,7 @@ export const PlansProvider = ({ children }) => {
         selectedMonthlyPlan,
         setSelectedMonthlyPlan,
         selectedYearlyPlan,
-        setSelectedYearlyPlan
+        setSelectedYearlyPlan,
       }}
     >
       {children}

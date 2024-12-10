@@ -1,12 +1,8 @@
-This is a solution to the [Multi-step form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/multistep-form-YVAnSdqQBJ).
+# React + Vite
 
-Users should be able to:
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-- Complete each step of the sequence
-- See a summary of their selections on the final step and confirm their order
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
+Currently, two official plugins are available:
 
-# [YT Video Preview](https://youtu.be/rKIRPPwx7Ow).
-
-![desktop-preview](https://user-images.githubusercontent.com/95870159/209869300-7e99671a-a635-4970-8571-5fa97dcec027.jpg)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

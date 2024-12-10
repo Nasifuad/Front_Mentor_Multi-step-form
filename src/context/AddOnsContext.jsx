@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { createContext, useState } from "react";
 
 const AddOnsContext = createContext();
@@ -32,7 +33,7 @@ export const AddOnsProvider = ({ children }) => {
         addOns,
         setAddOns,
         selectedAddOnsValue,
-        setSelectedAddOnsValue
+        setSelectedAddOnsValue,
       }}
     >
       {children}
